@@ -1,0 +1,184 @@
+/*!
+Theme Name: Bosa Wedding
+Theme URI: https://bosathemes.com/bosa-wedding
+Author: Bosa Themes
+Author URI: https://bosathemes.com
+Description: Bosa Wedding is multipurpose wedding theme. Bosa Wedding is beautiful, fast, lightweight, responsive, extremely customizable theme that you can use as a foundation to build versatile sites such as wedding, wedding planner, wedding events, wedding stylist, wedding gallery, wedding announcement, engagement gallery, anniversaries, birthday parties, wedding photographers, marriage, couple, decorators and event managers, family functions, catering, boutique flowershop, family gatherings, baby shower, boutiquewedding bands or for art and design, graduation party, personal, portfolio, lifestyle, fashion, girlie or feminine blogs and preferably ideal for any type of wedding websites. Bosa Wedding is a child theme of Bosa, a free multipurpose WordPress theme. Bosa Wedding works perfectly with Gutenberg and the most popular page builder Elementor that can easily drag-and-drop your ideas from the interface. Bosa Wedding is built with SEO, speed, and usability in mind with the multiple Header & Footer layouts, predesigned starter sites includes awesome Home & Inner Pages that is incredibly customizable and powerful enough to take a stand among the crowd. Bosa Wedding is compatible with all major plugins like WooCommerce, Yoast, Contact form 7, Mailchimp for WordPress, bbPress, etc. Looking for a Multipurpose Wedding theme? Look no further! Browse the demo to see that it's the only theme you will ever need: https://demo.bosathemes.com/bosa/wedding
+Version: 1.0.3
+Requires PHP: 5.5
+Tested up to: 6.0
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Template: bosa
+Text Domain: bosa-wedding
+Tags: blog, portfolio, news, grid-Layout, one-column, two-columns, three-columns, flexible-header, left-sidebar, right-sidebar, custom-background, custom-colors, custom-logo, custom-menu, featured-images, footer-widgets, full-width-template, post-formats, rtl-language-support, theme-options, sticky-post, threaded-comments, translation-ready, block-styles, wide-blocks
+
+Bosa Wedding WordPress Theme, Copyright 2022 Bosa Themes
+Bosa Wedding is distributed under the terms of the GNU General Public License v3
+
+Bosa Wedding is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+*/
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+body {
+  color: #444444;
+  font-family: 'DM Sans', sans-serif;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  color: #3a3a3a;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+}
+
+.wp-block-quote {
+  padding: 30px 30px 30px 50px;
+  margin: 30px 0 30px 30px;
+}
+
+.site-header .site-branding .site-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: none;
+}
+
+.main-navigation ul.menu > li > a {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.section-banner .banner-content .entry-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 62px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-transform: capitalize;
+}
+
+.section-banner .banner-content .entry-text p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.8;
+  text-transform: initial;
+}
+
+.feature-posts-content-wrap .feature-posts-content .feature-posts-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-transform: capitalize;
+}
+
+.post .feature-posts-content .cat-links a {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+#primary article .entry-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-transform: capitalize;
+}
+
+.highlight-post-slider .post .entry-content .entry-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-transform: capitalize;
+}
+
+.highlight-post-slider .post .cat-links a {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.sidebar .widget .widget-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.page-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.site-footer .site-info,
+.site-footer .footer-menu ul li a {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  text-transform: none;
+  line-height: 1.6;
+}
+
+.comment-navigation .nav-previous a,
+.comment-navigation .nav-next a,
+.posts-navigation .nav-previous a,
+.posts-navigation .nav-next a,
+.post-navigation .nav-previous a,
+.post-navigation .nav-next a {
+    font-weight: 400;
+}
+
+#bosa-wedding-contact .wpcf7 input[type=text],
+#bosa-wedding-contact .wpcf7 input[type=email],
+#bosa-wedding-contact .wpcf7 textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+#bosa-wedding-contact .wpcf7 input[type=submit] {
+  margin-top: 15px;
+  background-color: #83bfab;
+  font-weight: 500;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  padding: 20px 30px 20px 30px;
+}
+
+#bosa-wedding-contact .wpcf7 input[type=submit]:hover,
+#bosa-wedding-contact .wpcf7 input[type=submit]:active,
+#bosa-wedding-contact .wpcf7 input[type=submit]:focus {
+  background-color: #2c75ba;
+}

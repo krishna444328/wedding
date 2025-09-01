@@ -3269,61 +3269,111 @@
 <body
 	class="home page-template page-template-elementor_header_footer page page-id-112 ehf-header ehf-footer ehf-template-bosa ehf-stylesheet-bosa-wedding transparent-header default-skin no-sidebar site-layout-default elementor-default elementor-template-full-width elementor-kit-8 elementor-page elementor-page-112">
 	<style>
-    /* Loader container */
-    #loader {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: white; /* background white */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-      overflow: hidden;
-    }
-
-    /* Video fullscreen (16:9 best fit) */
-    #loader video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;   /* 16:9 video fullscreen fit kare */
-      background: white;
-    }
-
-    /* Hide page until loader finishes */
-    body.loaded #loader {
-      display: none;
-    }
-  </style>
-
-  <!-- Loader Video -->
-  <div id="loader">
-    <video autoplay muted playsinline id="loaderVideo">
-      <!-- 👇 16:9 ratio video use karein -->
-      <source src="WhatsApp Video 2025-08-23 at 11.34.46_b8153540.mp4" type="video/mp4">
-      Your browser does not support HTML5 video.
-    </video>
-  </div>
-
-  <!-- Actual Website Content -->
-  <!-- <div id="content" style="display:none; text-align:center; padding:50px;">
-    <h1>Welcome to My Website 🎉</h1>
-    <p>This is the main page content.</p>
-    <a href="page2.html">Go to Page 2</a>
-  </div> -->
-
-  <script>
-    const loaderVideo = document.getElementById("loaderVideo");
-    const content = document.getElementById("content");
-
-    // Jab video khatam ho jaye
-    loaderVideo.onended = function() {
-      document.body.classList.add("loaded");
-      content.style.display = "block"; // Page dikhado
-    };
-  </script>
+		/* Loader container */
+		#loader {
+		  position: fixed;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 100%;
+		  background: white;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  z-index: 9999;
+		  overflow: hidden;
+		}
+	  
+		body.loaded #loader {
+		  display: none;
+		}
+	  
+		/* ---------- DESKTOP CSS ---------- */
+		#desktopLoader {
+		  display: block;
+		  width: 100%;
+		  height: 100%;
+		}
+		#desktopLoader video {
+		  width: 1747px;
+		height: 100%;
+		margin-left: -226px;
+		  object-fit: cover;     /* FULL screen fill karega */
+		  object-position: center center; /* Center me rakhega */
+		}
+	  
+		/* ---------- MOBILE CSS ---------- */
+		#mobileLoader {
+		  display: none;
+		  left: -65px;
+		  width: 485px;
+		  height: 100%;
+		}
+		#mobileLoader video {
+		  width: 488px;
+		  height: 100%;
+		  object-fit: contain;   /* Mobile pe pura video bina cut ke */
+		  background: white;     /* agar gap aaye to black background */
+		}
+	  
+		/* ---------- Responsive Switch ---------- */
+		@media (max-width: 768px) {
+		  #desktopLoader {
+			display: none;
+		  }
+		  #mobileLoader {
+			display: block;
+		  }
+		}
+	  </style>
+	  
+	  
+	  <!-- Loader -->
+	  <div id="loader">
+		<!-- Desktop loader -->
+		<div id="desktopLoader">
+		  <video autoplay muted playsinline id="desktopVideo">
+			<source src="WhatsApp Video 2025-08-23 at 11.34.46_b8153540.mp4" type="video/mp4">
+			Your browser does not support HTML5 video.
+		  </video>
+		</div>
+	  
+		<!-- Mobile loader -->
+		<div id="mobileLoader">
+		  <video autoplay muted playsinline id="mobileVideo">
+			<source src="WhatsApp Video 2025-08-23 at 11.34.46_b8153540.mp4" type="video/mp4">
+			Your browser does not support HTML5 video.
+		  </video>
+		</div>
+	  </div>
+	  
+	  <!-- Website Content -->
+	  <!-- <div id="content" style="display:none; text-align:center; padding:50px;">
+		<h1>Welcome to My Website 🎉</h1>
+		<p>This is the main page content.</p>
+	  </div> -->
+	  
+	  <script>
+		const desktopVideo = document.getElementById("desktopVideo");
+		const mobileVideo = document.getElementById("mobileVideo");
+		const content = document.getElementById("content");
+	  
+		// Desktop ke liye
+		if (desktopVideo) {
+		  desktopVideo.onended = function () {
+			document.body.classList.add("loaded");
+			content.style.display = "block";
+		  };
+		}
+	  
+		// Mobile ke liye
+		if (mobileVideo) {
+		  mobileVideo.onended = function () {
+			document.body.classList.add("loaded");
+			content.style.display = "block";
+		  };
+		}
+	  </script>
 	<!-- Google Tag Manager (noscript) snippet added by Site Kit -->
 	<noscript>
 		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WF9PPZJM" height="0" width="0"
@@ -3457,7 +3507,7 @@ document.getElementById("services").addEventListener("change", function() {
 																	</li>
 																	<li id="menu-item-147"
 																		class="menu-item menu-item-type-custom menu-item-object-custom parent hfe-creative-menu">
-																		<a href="#contactus"
+																		<a href="Destination-Weddings/krishna.html"
 																			class="hfe-menu-item">Contact Us</a>
 																	</li>
 																	<li id="menu-item-147"
@@ -6699,7 +6749,7 @@ document.getElementById("services").addEventListener("change", function() {
         <li><a href="index.html">Home</a></li>
         <li><a href="about-us/index.html">About Us</a></li>
         <li><a href="gallery.php">Gallery</a></li>
-        <li><a href="#">Team</a></li>
+        <li><a href="#outteam">Team</a></li>
         <li><a href="Destination-Weddings/krishna.html">Contact Us</a></li>
       </ul>
     </div>
